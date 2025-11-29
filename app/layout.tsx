@@ -11,8 +11,20 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Kanaltytiq | AI & Data Solutions",
-  description: "Portfolio and services of Kanaltytiq - Showcasing expertise in AI, Data, and Software Development.",
+  title: "Kanishka Sharma | Data Analyst & AI Specialist",
+  description: "Portfolio of Kanishka Sharma - Data Analyst specializing in AI, Machine Learning, and Data Science. Showcasing expertise in Power BI, SQL, Python, and ML solutions.",
+  openGraph: {
+    title: "Kanishka Sharma | Data Analyst & AI Specialist",
+    description: "Portfolio of Kanishka Sharma - Data Analyst specializing in AI, Machine Learning, and Data Science.",
+    images: ['/portfolio-thumbnail.png'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Kanishka Sharma | Data Analyst & AI Specialist",
+    description: "Portfolio of Kanishka Sharma - Data Analyst specializing in AI, Machine Learning, and Data Science.",
+    images: ['/portfolio-thumbnail.png'],
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +40,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
     { name: "Home", href: "#home" },
     { name: "Education", href: "#education" },
+    { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Services", href: "#services" },
@@ -46,12 +47,25 @@ export function Navbar() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-foreground/80 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                className="relative group px-3 py-2 text-sm font-bold transition-colors"
                             >
-                                {item.name}
+                                <span className="relative z-10 text-foreground/80 group-hover:text-primary transition-colors duration-300">
+                                    {item.name}
+                                </span>
+                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                             </Link>
                         ))}
+                    </div>
+
+                    {/* Desktop Right Side - Theme Toggle & Let's Talk */}
+                    <div className="hidden md:flex items-center space-x-4">
                         <ThemeToggle />
+                        <Link
+                            href="#contact"
+                            className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary via-primary/90 to-primary text-primary-foreground rounded-full text-sm font-semibold hover:from-primary/90 hover:via-primary hover:to-primary/90 transition-all hover:scale-105 shadow-md animate-pulse hover:animate-none"
+                        >
+                            Let's Talk
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button - Left Side */}
@@ -66,15 +80,9 @@ export function Navbar() {
                         </button>
                     </div>
 
-                    {/* Logo - Right Side */}
-                    <div className="flex-shrink-0">
-                        <Link href="/" className="flex items-center">
-                            <img
-                                src="/logo.png"
-                                alt="Kanaltytiq"
-                                className="h-12 md:h-16 w-auto"
-                            />
-                        </Link>
+                    {/* Logo - Right Side - Removed */}
+                    <div className="flex-shrink-0 md:hidden">
+                        {/* Logo removed as per user request */}
                     </div>
                 </div>
             </div>
@@ -94,11 +102,18 @@ export function Navbar() {
                                     key={item.name}
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="text-foreground/80 hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+                                    className="text-foreground/80 hover:text-primary block px-3 py-2 rounded-md text-base font-bold"
                                 >
                                     {item.name}
                                 </Link>
                             ))}
+                            <Link
+                                href="#contact"
+                                onClick={() => setIsOpen(false)}
+                                className="block w-full text-center px-3 py-2 mt-4 bg-primary text-primary-foreground rounded-full text-base font-semibold hover:bg-primary/90 transition-colors"
+                            >
+                                Let's Talk
+                            </Link>
                         </div>
                     </motion.div>
                 )}

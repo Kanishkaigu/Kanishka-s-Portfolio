@@ -1,6 +1,6 @@
-# Kanaltytiq Portfolio
+# Kanishka Sharma Portfolio
 
-A premium portfolio website for Kanaltytiq, featuring an AI chatbot and contact form.
+A premium portfolio website for Kanishka Sharma, featuring an AI chatbot and contact form.
 
 ## Tech Stack
 

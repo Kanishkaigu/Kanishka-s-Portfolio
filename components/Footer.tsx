@@ -6,13 +6,8 @@ export function Footer() {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center gap-4">
-                    <img
-                        src="/logo.png"
-                        alt="Kanaltytiq"
-                        className="h-12 w-auto"
-                    />
                     <div className="text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} Kanaltytiq. All rights reserved.
+                        © {new Date().getFullYear()} Kanishka. All rights reserved.
                     </div>
                 </div>
             </div>

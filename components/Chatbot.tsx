@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export function Chatbot() {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState<{ role: "user" | "bot"; content: string }[]>([
-        { role: "bot", content: "Hi! I'm the Kanaltytiq AI assistant. How can I help you today?" },
+        { role: "bot", content: "Hi! I'm Kanishka's AI assistant. How can I help you today?" },
     ]);
     const [input, setInput] = useState("");
 
@@ -58,7 +58,7 @@ export function Chatbot() {
                         style={{ maxHeight: "calc(100vh - 100px)" }}
                     >
                         <div className="p-4 bg-primary text-primary-foreground flex justify-between items-center">
-                            <h3 className="font-semibold">Kanaltytiq AI</h3>
+                            <h3 className="font-semibold">AI Assistant</h3>
                             <button onClick={() => setIsOpen(false)} className="hover:bg-primary-foreground/20 p-1 rounded">
                                 <X className="h-5 w-5" />
                             </button>

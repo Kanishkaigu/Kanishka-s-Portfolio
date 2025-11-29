@@ -21,22 +21,37 @@ const education = [
 export function Education() {
     return (
         <section id="education" className="py-20 bg-muted/30">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl font-bold mb-12 text-center uppercase tracking-tight">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-4xl font-bold mb-16 text-center uppercase tracking-tight">
                     Academic <span className="text-primary">Journey</span>
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+
+                <div className="relative space-y-12">
+                    {/* Vertical Line */}
+                    <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2 hidden md:block"></div>
+
                     {education.map((edu, index) => (
-                        <div key={index} className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-all flex flex-col h-full">
-                            <div className="flex items-start gap-4 mb-4">
-                                <div className="p-3 bg-primary/10 rounded-lg shrink-0">
-                                    <GraduationCap className="h-6 w-6 text-primary" />
+                        <div key={index} className={`relative flex flex-col md:flex-row gap-8 items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                            {/* Content Card */}
+                            <div className="flex-1 w-full">
+                                <div className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-all shadow-sm hover:shadow-md group">
+                                    <div className="flex items-start gap-4 mb-3">
+                                        <div className="p-3 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                                            <GraduationCap className="h-6 w-6" />
+                                        </div>
+                                        <h3 className="text-lg font-bold leading-tight">{edu.degree}</h3>
+                                    </div>
+                                    <p className="text-muted-foreground text-sm leading-relaxed pl-[3.25rem]">
+                                        {edu.description}
+                                    </p>
                                 </div>
-                                <h3 className="text-xl font-bold leading-tight">{edu.degree}</h3>
                             </div>
-                            <p className="text-foreground/80 text-sm flex-grow">
-                                {edu.description}
-                            </p>
+
+                            {/* Timeline Dot */}
+                            <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-primary rounded-full -translate-x-1/2 border-4 border-background shadow-sm z-10 hidden md:block"></div>
+
+                            {/* Empty Space for alignment */}
+                            <div className="flex-1 w-full hidden md:block"></div>
                         </div>
                     ))}
                 </div>

@@ -90,7 +90,7 @@ export function Skills() {
                                     {category.title}
                                 </h3>
                             </div>
-                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                                 {category.skills.map((skill, skillIndex) => (
                                     <motion.div
                                         key={skill.name}
@@ -98,9 +98,9 @@ export function Skills() {
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.3, delay: skillIndex * 0.05 }}
-                                        className="bg-card p-4 rounded-xl border border-border hover:border-primary/50 transition-all flex flex-col items-center justify-center gap-3 hover:shadow-lg hover:shadow-primary/10 group"
+                                        className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-all flex flex-col items-center justify-center gap-4 hover:shadow-lg hover:shadow-primary/10 group"
                                     >
-                                        <div className="text-4xl group-hover:scale-110 transition-transform duration-300 flex items-center justify-center w-12 h-12">
+                                        <div className="text-4xl group-hover:scale-110 transition-transform duration-300 flex items-center justify-center w-20 h-20">
                                             <img
                                                 src={skill.icon}
                                                 alt={skill.name}

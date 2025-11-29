@@ -15,29 +15,12 @@ const services = [
         description: "From predictive analytics to deep learning, I create AI solutions that solve real business problems using Python, Scikit-learn, TensorFlow, and PyTorch.",
         image: "/assets/skills/AI & Machine Learning Solutions.png",
     },
+
     {
-        title: "MLOps & Model Deployment",
-        tagline: "Taking AI models from experiment to enterprise-scale production.",
-        description: "End-to-end MLOps solutions including model containerization, CI/CD pipelines, and monitoring using Docker, Kubernetes, and FastAPI.",
-        image: "/assets/skills/MLOps & Model Deployment.png",
-    },
-    {
-        title: "Generative AI & AI Automation",
-        tagline: "Creating intelligent systems that generate content and automate workflows.",
-        description: "Generative AI solutions for content creation, code generation, and intelligent automation tools that enhance productivity and creativity.",
-        image: "/assets/skills/Generative AI & AI Automation.png",
-    },
-    {
-        title: "Web Development & AI Integration",
-        tagline: "Building modern web applications enhanced with AI capabilities.",
-        description: "Full-stack web development with seamless AI integration using React, Node.js, FastAPI, and cloud technologies for intelligent user experiences.",
-        image: "/assets/skills/Web Development & AI Integration.png",
-    },
-    {
-        title: "Startup Builder",
-        tagline: "Building innovative tech startups from concept to launch.",
-        description: "End-to-end startup development services including ideation, MVP development, and scaling strategies for tech ventures.",
-        image: "/assets/skills/Startup Builder.png",
+        title: "CRM Integration",
+        tagline: "Seamless integration with leading CRM and ERP platforms.",
+        description: "Expert integration services for LeadSquared, Salesforce, ERP systems, 4QT, and other platforms tailored for healthcare, real estate, educational businesses, and more.",
+        image: "/assets/skills/CRM Integration.png",
     },
 ];
 
@@ -52,7 +35,7 @@ export function Services() {
                     Comprehensive solutions to transform your business with data-driven insights and cutting-edge AI technology
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {services.map((service) => (
                         <div
                             key={service.title}
