@@ -24,7 +24,7 @@ export function Projects() {
         'movie-recommender-system': 'A content-based recommender system suggests items to a user based on the features of items the user has previously liked.',
         'studentmarksprediction': 'The core idea is to predict a student\'s marks based on their studying hours using the Linear Regression algorithm from the Scikit Learn library. The project utilizes various Python libraries for data handling and visualization, including Numpy, Pandas, Matplotlib, and Seaborn.',
         'my-portfolio': 'A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features an AI-powered chatbot, interactive project showcase, dynamic skills visualization, and seamless contact integration. Showcases expertise in full-stack development, UI/UX design, and modern web technologies.',
-        'kanalytiq-portfolio': 'A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features an AI-powered chatbot, interactive project showcase, dynamic skills visualization, and seamless contact integration. Showcases expertise in full-stack development, UI/UX design, and modern web technologies.',
+        'kanishka-s-portfolio': 'A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features an AI-powered chatbot, interactive project showcase, dynamic skills visualization, and seamless contact integration. Showcases expertise in full-stack development, UI/UX design, and modern web technologies.',
     };
 
     useEffect(() => {
