@@ -15,7 +15,7 @@ export function LoadingScreen() {
         return () => clearTimeout(timer);
     }, []);
 
-    if (!isLoading) return null;
+
 
     return (
         <AnimatePresence>

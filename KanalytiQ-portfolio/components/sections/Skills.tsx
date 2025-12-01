@@ -45,7 +45,7 @@ const skillCategories = [
         skills: [
             { name: "Power BI", icon: "/assets/skills/PowerBI.png" },
             { name: "Tableau", icon: "/assets/skills/Tableu.png" },
-            { name: "Pandas", icon: "/assets/skills/pandas.png" },
+            { name: "Pandas", icon: "/assets/skills/Pandas.png" },
             { name: "Matplotlib", icon: "/assets/skills/Matplotlib.png" },
             { name: "Seaborn", icon: "/assets/skills/seaborn.png" },
             { name: "Statistical Analysis", icon: "/assets/skills/Statistical Analysis.png" },

@@ -7,20 +7,20 @@ const services = [
         title: "Data Analytics & Visualization",
         tagline: "Transforming raw data into actionable insights.",
         description: "I help businesses uncover hidden patterns and trends through advanced analytics and interactive dashboards using Power BI, Tableau, and Python libraries.",
-        image: "/assets/skills/Data Analytics & Visualization.png",
+        image: "/assets/services/data-analytics.png",
     },
     {
         title: "AI & Machine Learning Solutions",
         tagline: "Building intelligent models that predict and optimize.",
         description: "From predictive analytics to deep learning, I create AI solutions that solve real business problems using Python, Scikit-learn, TensorFlow, and PyTorch.",
-        image: "/assets/skills/AI & Machine Learning Solutions.png",
+        image: "/assets/services/ai-ml.png",
     },
 
     {
         title: "CRM Integration",
         tagline: "Seamless integration with leading CRM and ERP platforms.",
         description: "Expert integration services for LeadSquared, Salesforce, ERP systems, 4QT, and other platforms tailored for healthcare, real estate, educational businesses, and more.",
-        image: "/assets/skills/CRM Integration.png",
+        image: "/assets/services/crm-integration.png",
     },
 ];
 
@@ -39,18 +39,22 @@ export function Services() {
                     {services.map((service) => (
                         <div
                             key={service.title}
-                            className="bg-card p-8 rounded-xl border border-border hover:border-primary/50 transition-all group hover:shadow-lg hover:shadow-primary/10"
+                            className="bg-card rounded-xl border border-border hover:border-primary/50 transition-all group hover:shadow-lg hover:shadow-primary/10 overflow-hidden flex flex-col"
                         >
-                            <div className="w-20 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all overflow-hidden p-2">
+                            <div className="w-full h-48 overflow-hidden relative">
                                 <img
                                     src={service.image}
                                     alt={service.title}
-                                    className="w-full h-full object-contain group-hover:brightness-0 group-hover:invert transition-all"
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
+                                <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div>
                             </div>
-                            <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                            <p className="text-sm text-primary font-semibold mb-3 italic">{service.tagline}</p>
-                            <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+
+                            <div className="p-6 flex-1 flex flex-col">
+                                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                                <p className="text-sm text-primary font-semibold mb-3 italic">{service.tagline}</p>
+                                <p className="text-muted-foreground leading-relaxed text-sm flex-1">{service.description}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
