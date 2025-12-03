@@ -46,7 +46,7 @@ Run the Next.js development server:
 npm run dev
 ```
 
-The website will be available at `https://kanishka-s-portfolio.vercel.app/`.
+The website will be available at `http://localhost:3000`.
 
 ## Features
 

@@ -1,0 +1,56 @@
+
+> kanalytix-portfolio@0.1.0 lint
+> eslint
+
+
+/Users/kanishkasharma/Desktop/KANISHKA'S PORTFOLIO/KanalytiQ-portfolio/components/layout/Navbar.tsx
+   67:32  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  115:36  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/kanishkasharma/Desktop/KANISHKA'S PORTFOLIO/KanalytiQ-portfolio/components/sections/Contact.tsx
+   12:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/kanishkasharma/Desktop/KANISHKA'S PORTFOLIO/KanalytiQ-portfolio/components/sections/Contact.tsx:12:9
+  10 |
+  11 |     useEffect(() => {
+> 12 |         setMounted(true);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  13 |     }, []);
+  14 |
+  15 |     const handleSubmit = async (e: React.FormEvent) => {  react-hooks/set-state-in-effect
+  157:34  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react/no-unescaped-entities
+
+/Users/kanishkasharma/Desktop/KANISHKA'S PORTFOLIO/KanalytiQ-portfolio/components/sections/Experience.tsx
+  4:10  warning  'Briefcase' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/kanishkasharma/Desktop/KANISHKA'S PORTFOLIO/KanalytiQ-portfolio/components/sections/Hero.tsx
+  124:33  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  165:33  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/kanishkasharma/Desktop/KANISHKA'S PORTFOLIO/KanalytiQ-portfolio/components/sections/Projects.tsx
+   4:32  warning  'Star' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+   4:38  warning  'GitFork' is defined but never used                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+   5:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  76:41  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/kanishkasharma/Desktop/KANISHKA'S PORTFOLIO/KanalytiQ-portfolio/components/sections/Services.tsx
+   3:10  warning  'BarChart3' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+   3:21  warning  'Brain' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   3:28  warning  'Rocket' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+   3:36  warning  'Sparkles' is defined but never used                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+   3:46  warning  'Globe' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   3:53  warning  'TrendingUp' is defined but never used                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+  45:33  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/kanishkasharma/Desktop/KANISHKA'S PORTFOLIO/KanalytiQ-portfolio/components/sections/Skills.tsx
+   82:37  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  103:45  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+✖ 20 problems (4 errors, 16 warnings)
+

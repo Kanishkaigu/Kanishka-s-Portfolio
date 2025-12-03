@@ -1,5 +1,0 @@
-{
-    "buildCommand": "cd KanalytiQ-portfolio && npm run build",
-    "outputDirectory": "KanalytiQ-portfolio/.next",
-    "installCommand": "cd KanalytiQ-portfolio && npm install"
-}
