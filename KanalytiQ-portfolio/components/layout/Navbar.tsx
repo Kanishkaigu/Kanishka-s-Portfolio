@@ -64,7 +64,7 @@ export function Navbar() {
                             href="#contact"
                             className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary via-primary/90 to-primary text-primary-foreground rounded-full text-sm font-semibold hover:from-primary/90 hover:via-primary hover:to-primary/90 transition-all hover:scale-105 shadow-md animate-pulse hover:animate-none"
                         >
-                            Let's Talk
+                            Let&apos;s Talk
                         </Link>
                     </div>
 
@@ -112,7 +112,7 @@ export function Navbar() {
                                 onClick={() => setIsOpen(false)}
                                 className="block w-full text-center px-3 py-2 mt-4 bg-primary text-primary-foreground rounded-full text-base font-semibold hover:bg-primary/90 transition-colors"
                             >
-                                Let's Talk
+                                Let&apos;s Talk
                             </Link>
                         </div>
                     </motion.div>

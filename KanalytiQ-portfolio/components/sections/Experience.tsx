@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 export function Experience() {
     return (

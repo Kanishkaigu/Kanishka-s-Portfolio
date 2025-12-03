@@ -1,6 +1,6 @@
 "use client";
 
-import { BarChart3, Brain, Rocket, Sparkles, Globe, TrendingUp } from "lucide-react";
+import { } from "lucide-react";
 
 const services = [
     {

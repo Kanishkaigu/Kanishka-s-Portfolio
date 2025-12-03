@@ -1,53 +1,54 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Brain, Database, Server, BarChart } from "lucide-react";
 
 const skillCategories = [
     {
         title: "ML, DL and AI",
-        image: "/assets/skills/Machine Learning, NLP & DL Libraries.png",
+        Icon: Brain,
         skills: [
-            { name: "Python", icon: "/assets/skills/Python.png" },
-            { name: "GenAI", icon: "/assets/skills/GenAI.png" },
+            { name: "Python", icon: "/assets/skills/python-svgrepo-com.svg" },
+            { name: "GenAI", icon: "/assets/skills/Gen AI.png" },
             { name: "Agentic AI", icon: "/assets/skills/Agentic AI.png" },
-            { name: "ML/DL", icon: "/assets/skills/Deep learning.png" },
-            { name: "PyTorch", icon: "/assets/skills/PyTorch.png" },
-            { name: "Keras", icon: "/assets/skills/Keras.png" },
-            { name: "Scikit-learn", icon: "/assets/skills/Scikit-learn.png" },
-            { name: "NumPy", icon: "/assets/skills/NumPy.png" },
-            { name: "Hugging Face", icon: "/assets/skills/Hugging Face.png" },
-            { name: "NLP", icon: "/assets/skills/NLP.png" },
+
+            { name: "PyTorch", icon: "/assets/skills/pytorch-icon.svg" },
+            { name: "Keras", icon: "/assets/skills/Keras.svg" },
+            { name: "Scikit-learn", icon: "/assets/skills/scikit-learn.svg" },
+            { name: "NumPy", icon: "/assets/skills/NumPy.svg" },
+            { name: "Hugging Face", icon: "/assets/skills/huggingface-color.svg" },
+            { name: "NLP", icon: "/assets/skills/nlp.png" },
         ]
     },
     {
         title: "Cloud & Databases",
-        image: "/assets/skills/ Cloud & Databases.png",
+        Icon: Database,
         skills: [
-            { name: "AWS", icon: "/assets/skills/aws.png" },
-            { name: "MySQL", icon: "/assets/skills/MySQL.png" },
-            { name: "MS SQL Server", icon: "/assets/skills/MySQL Workbench.png" },
-            { name: "Docker", icon: "/assets/skills/Docker.png" },
+            { name: "AWS", icon: "/assets/skills/AWS.png" },
+            { name: "MySQL", icon: "/assets/skills/mysql-logo-svgrepo-com.svg" },
+
+            { name: "Docker", icon: "/assets/skills/docker-svgrepo-com.svg" },
         ]
     },
     {
         title: "Backend, APIs & Web Frameworks",
-        image: "/assets/skills/Backend, APIs & Web Frameworks.png",
+        Icon: Server,
         skills: [
-            { name: "FastAPI", icon: "/assets/skills/FastAPI.png" },
-            { name: "REST APIs", icon: "/assets/skills/RestAPI.png" },
-            { name: "Airflow", icon: "/assets/skills/Airflow.png" },
+            { name: "FastAPI", icon: "/assets/skills/FastAPI.svg" },
+            { name: "REST APIs", icon: "/assets/skills/REST API.png" },
+            { name: "Airflow", icon: "/assets/skills/Apache Airflow.svg" },
             { name: "ETL Pipelines", icon: "/assets/skills/ETL.png" },
         ]
     },
     {
         title: "Data Visualization & BI",
-        image: "/assets/skills/Data Visualization & BI.png",
+        Icon: BarChart,
         skills: [
-            { name: "Power BI", icon: "/assets/skills/PowerBI.png" },
-            { name: "Tableau", icon: "/assets/skills/Tableu.png" },
-            { name: "Pandas", icon: "/assets/skills/Pandas.png" },
-            { name: "Matplotlib", icon: "/assets/skills/Matplotlib.png" },
-            { name: "Seaborn", icon: "/assets/skills/seaborn.png" },
+            { name: "Power BI", icon: "/assets/skills/PowerBI.svg" },
+            { name: "Tableau", icon: "/assets/skills/Tableau.svg" },
+            { name: "Pandas", icon: "/assets/skills/Pandas.svg" },
+            { name: "Matplotlib", icon: "/assets/skills/Matplotlib.svg" },
+            { name: "Seaborn", icon: "/assets/skills/Seaborn.svg" },
             { name: "Statistical Analysis", icon: "/assets/skills/Statistical Analysis.png" },
         ]
     }
@@ -78,12 +79,8 @@ export function Skills() {
                             transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
                         >
                             <div className="flex items-center gap-4 mb-8 border-b border-border pb-4">
-                                <div className="w-16 h-16 rounded-xl overflow-hidden bg-muted/50 p-2">
-                                    <img
-                                        src={category.image}
-                                        alt={category.title}
-                                        className="w-full h-full object-contain"
-                                    />
+                                <div className="w-16 h-16 rounded-xl overflow-hidden bg-muted/50 p-3 flex items-center justify-center">
+                                    <category.Icon className="w-full h-full text-primary" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-primary">
                                     {category.title}

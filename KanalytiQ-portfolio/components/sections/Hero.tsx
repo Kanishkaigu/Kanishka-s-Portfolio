@@ -2,8 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 
-import Link from "next/link";
-import { ArrowRight, Eye, Phone, MapPin, X } from "lucide-react";
+import { Eye, X } from "lucide-react";
 import { useState } from "react";
 
 export function Hero() {
@@ -171,7 +170,7 @@ export function Hero() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                                 <div className="absolute bottom-0 left-0 right-0 p-8 text-center">
                                     <h3 className="text-3xl font-bold text-white mb-2 tracking-tight">
-                                        "Clarity from Complexity"
+                                        &quot;Clarity from Complexity&quot;
                                     </h3>
                                     <p className="text-white/80 font-medium">Kanishka</p>
                                 </div>

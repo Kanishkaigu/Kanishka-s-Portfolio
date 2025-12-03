@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ExternalLink, Github, Star, GitFork } from "lucide-react";
-import Image from "next/image";
+import { ExternalLink, Github } from "lucide-react";
 
 interface Repo {
     id: number;
@@ -58,7 +57,7 @@ export function Projects() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projects.map((repo) => {
                             // Generate image path from repo name
-                            const imagePath = `/assets/projects/${repo.name.toLowerCase()}.png`;
+                            const imagePath = `/assets/projects/${repo.name.toLowerCase()}.png?v=${new Date().getTime()}`;
 
                             // Clean up project name
                             const cleanName = repo.name.replace(/swiggy/i, '').replace(/-/g, ' ').trim();
