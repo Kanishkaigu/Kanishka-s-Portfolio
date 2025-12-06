@@ -11,6 +11,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: "Kanishka Sharma | Data Analyst & AI Specialist",
   description: "Portfolio of Kanishka Sharma - Data Analyst specializing in AI, Machine Learning, and Data Science. Showcasing expertise in Power BI, SQL, Python, and ML solutions.",
   openGraph: {

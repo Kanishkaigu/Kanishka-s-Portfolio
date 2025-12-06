@@ -47,6 +47,7 @@
 
     --primary: hsl(43 96% 56%);
     --primary-foreground: hsl(26 83.3% 14.1%);
+    --primary-rgb: 250, 189, 35;
 
     --secondary: hsl(210 40% 96.1%);
     --secondary-foreground: hsl(222 47% 11%);
@@ -79,6 +80,7 @@
 
     --primary: hsl(43 96% 56%);
     --primary-foreground: hsl(26 83.3% 14.1%);
+    --primary-rgb: 250, 189, 35;
 
     --secondary: hsl(217 33% 17%);
     --secondary-foreground: hsl(210 40% 98%);
